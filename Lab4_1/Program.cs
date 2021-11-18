@@ -12,13 +12,14 @@ namespace Lab4
         static void Main(string[] args)
             {
             int N;
-            int sum;
+            int S=0;
             Console.WriteLine("Введите число");
             N = Convert.ToInt32(Console.ReadLine());
-
-            for (int i = 1; i <=N; i++)
+             for (int i = 1; i <=N; i++)
             {
-                Console.WriteLine("Квадрат числа {0} равен {1}", i, i * i);
+                S = S + (2 * i - 1);
+
+                Console.WriteLine("Квадрат числа {0} равен {1}", i, S );
             }
             Console.ReadKey();
         }
